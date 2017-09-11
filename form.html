@@ -1,12 +1,19 @@
 <html>
   <head>
     <title>A test form</title>
+    <script>
+      function setName(name){
+        var expire = new Date();
+        expire.setMonth(expire.getMonth() + 1);
+        document.cookie = "username=" + name + "; expires=" + expire.toString();
+      }
+    </script>
   </head>
   <body>
     <form method="post" enctype="application/x-www-form-urlencoded">
     
       <label for="name">Name</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" onchange="setName(this.value)">
       <br>
 
       <label for="email">Mail</label>
