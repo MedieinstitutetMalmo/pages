@@ -3,24 +3,24 @@
     <title>A test form</title>
   </head>
   <body>
-    <form action="http://www.posttestserver.com/" method="post">
+    <form action="https://requestb.in/w7uiljw7" method="post" enctype="application/x-www-form-urlencoded">
     
       <label for="name">Name</label>
-      <input type="text" id="name">
+      <input type="text" name="name" id="name">
       <br>
 
       <label for="email">Mail</label>
-      <input type="email" id="email">
+      <input type="email" name="email" id="email">
       <br>
 
       <label for="comment">Enter comment</label>
-      <textarea id="comment" cols="100%" rows="10"></textarea>
+      <textarea id="comment" name="comment" cols="100%" rows="10"></textarea>
       <br>
 
-      <input type="submit" id="submit" value="Submit Comment">
+      <input type="submit" name="submit" id="submit" value="Submit Comment">
       <br>
         
-      <input type="checkbox" id="subscribe" value="subscribe" style="width: auto;">
+      <input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;">
       <label for="subscribe">Notify me of followup comments via e-mail</label>
       
     </form>
